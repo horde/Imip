@@ -2,7 +2,9 @@
 id: IMip
 name: Imip
 full: iMip inivitation protocol library
-description: A library to handle the iMip protocol to send MIME encapsuled iTip responses to iCalendar invitations. Ties into horde/itip and horde/icalendar.
+description: >-
+  A library to handle the iMip protocol to send MIME encapsuled iTip responses
+  to iCalendar invitations. Ties into horde/itip and horde/icalendar.
 list: dev
 type: library
 homepage: https://www.horde.org/libraries/Horde_Imip
@@ -20,10 +22,10 @@ authors:
     active: true
     role: lead
 version:
-  release: 1.0.0-beta0
+  release: 1.0.0-beta2
   api: 1.0.0alpha0
 state:
-  release: alpha
+  release: beta
   api: alpha
 license:
   identifier: LGPL-2.1-only

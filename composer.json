@@ -1,54 +1,39 @@
 {
     "name": "horde/imip",
-    "description": "A library to handle the iMip protocol to send MIME encapsuled iTip responses to iCalendar invitations. Ties into horde/itip and horde/icalendar.",
+    "description": "iMip inivitation protocol library",
     "type": "library",
     "homepage": "https://www.horde.org/libraries/Horde_Imip",
     "license": "LGPL-2.1-only",
     "authors": [
         {
+            "name": "Gunnar Wrobel",
+            "email": "p@rdus.de",
+            "role": "inherited"
+        },
+        {
             "name": "Ralf Lang",
             "email": "ralf.lang@ralf-lang.de",
             "role": "lead"
-        },
-        {
-            "name": "Gunnar Wrobel",
-            "email": "p@rdus.de",
-            "role": "developer"
         }
     ],
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../Icalendar",
-            "options": {"symlink": true}
-        },
-        {
-            "type": "path",
-            "url": "../Itip",
-            "options": {"symlink": true}
-        },
-        {
-            "type": "path",
-            "url": "../Mime",
-            "options": {"symlink": true}
-        },
-        {
-            "type": "path",
-            "url": "../Mail",
-            "options": {"symlink": true}
-        }
+    "keywords": [
+        "imip",
+        "invitations",
+        "responses"
     ],
+    "time": "2026-05-21",
+    "repositories": [],
     "require": {
         "php": "^8.1",
-        "horde/icalendar": "@dev",
-        "horde/itip": "@dev",
-        "horde/mime": "@dev"
+        "horde/icalendar": "^3 || dev-FRAMEWORK_6_0",
+        "horde/itip": "^3 || dev-FRAMEWORK_6_0",
+        "horde/mime": "^3 || dev-FRAMEWORK_6_0"
     },
     "require-dev": {
-        "horde/mail": "@dev"
+        "horde/mail": "^3 || dev-FRAMEWORK_6_0"
     },
     "suggest": {
-        "horde/mail": "Required for actual email delivery via ImipSendingListener"
+        "horde/mail": "^3 || dev-FRAMEWORK_6_0"
     },
     "autoload": {
         "psr-4": {
@@ -60,8 +45,6 @@
             "Horde\\Imip\\Test\\": "test/"
         }
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "config": {
         "allow-plugins": {}
     },
