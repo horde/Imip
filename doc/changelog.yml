@@ -1,0 +1,8 @@
+---
+- version: 1.0.0beta0
+  date: 2026-05-21
+  notes: |
+    [rla] Initial prototype of the iMIP transport library.
+    [rla] PSR-14 listener for horde/itip scheduling events.
+    [rla] MessageBuilder for RFC 6047 MIME construction.
+    [rla] ImipParsingService for inbound iMIP extraction.
